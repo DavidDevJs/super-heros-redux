@@ -7,7 +7,6 @@ import "./nav.css";
 const NavBar = () => {
   return (
     <nav className="nav__hero">
-      <Search />
       <h1 className="nav__hero--title">Hero App</h1>
       <Filters />
     </nav>

@@ -5,11 +5,7 @@ import "./filter.css";
 const FilterAdjectives = () => {
   return (
     <div className="filter__adjectives">
-      <select name="skills" id="skills">
-        {/* Falta crear las demas cualidades iterando la lista existente */}
-        <option value="" disabled selected hidden>
-          Qualities
-        </option>
+      <select name="skills" id="skills" defaultValue={"DEFAULT"}>
         <optgroup label="Gender">
           <option value="male">Male</option>
           <option value="female">Female</option>

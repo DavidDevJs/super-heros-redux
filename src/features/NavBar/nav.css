@@ -10,3 +10,11 @@
 .nav__hero--title {
   margin-inline-start: 2rem;
 }
+
+.nav__hero--title {
+  grid-column: 2;
+}
+
+.filter__wrapper {
+  grid-column: 3;
+}

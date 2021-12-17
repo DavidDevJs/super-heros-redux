@@ -1,16 +1,25 @@
 import React from "react";
+import "./heroes.css";
 
-const Card = () => {
+const Card = ({ ...data }) => {
+  console.log(data.image);
+  const styledImage = {
+    backgroundImage: `url(${data.image.url})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundPosition: "center",
+  };
+
   return (
-    <div className="card">
-      <h2>Name Hero</h2>
+    <div className="card" style={styledImage}>
+      <h2>{data.name}</h2>
       <ul>
-        <li>intelligence</li>
-        <li>Strength</li>
-        <li>Speed</li>
-        <li>Durability</li>
-        <li>Power</li>
-        <li>Combat</li>
+        <li>intelligence: {data.powerstats.intelligence}</li>
+        <li>Strength: {data.powerstats.strength} </li>
+        <li>Speed: {data.powerstats.speed}</li>
+        <li>Durability: {data.powerstats.durability}</li>
+        <li>Power: {data.powerstats.power}</li>
+        <li>Combat: {data.powerstats.combat}</li>
       </ul>
     </div>
   );

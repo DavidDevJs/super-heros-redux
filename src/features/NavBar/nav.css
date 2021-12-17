@@ -1,0 +1,12 @@
+.nav__hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100vw;
+  height: 3.3rem;
+  background-color: cadetblue;
+}
+
+.nav__hero--title {
+  margin-inline-start: 2rem;
+}

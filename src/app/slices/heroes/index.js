@@ -4,6 +4,10 @@ export const heroSlice = createSlice({
   name: "heroes",
   initialState: {
     list: [],
+    filters: {
+      quantity: 0,
+      quality: [],
+    },
   },
   reducers: {
     setHeroes: (state, action) => {

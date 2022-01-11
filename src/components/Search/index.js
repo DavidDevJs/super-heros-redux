@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { setHeroes } from "../../app/slices/heroes";
 
 import "./search.css";
+import { Filters } from "../Filters";
 
 const Search = () => {
   const [search, setSearch] = useState("Superman");
@@ -26,16 +27,18 @@ const Search = () => {
 
   return (
     <div className="search">
-      <form>
+      <label>
+        Search
         <input
           className="search__input"
           type="text"
           name="search"
           id="hero-search"
-          placeholder="Search your hero"
+          placeholder="Name Hero ..."
           onChange={handleChange}
         />
-      </form>
+      </label>
+      <Filters />
     </div>
   );
 };

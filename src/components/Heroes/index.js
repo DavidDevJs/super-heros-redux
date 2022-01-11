@@ -3,7 +3,9 @@ import { useSelector } from "react-redux";
 import { Search } from "../Search";
 
 import { Card } from "./Card";
-const HeroSection = () => {
+import "./heroes.css";
+
+const HeroesSectionSearch = () => {
   const { list } = useSelector((state) => state.heroes);
 
   return (
@@ -20,4 +22,4 @@ const HeroSection = () => {
   );
 };
 
-export { HeroSection };
+export { HeroesSectionSearch };

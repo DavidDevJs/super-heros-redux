@@ -1,0 +1,27 @@
+.wrapper__heroes {
+  min-width: 100%;
+  padding: 20px;
+}
+
+.list__heroes {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card__list {
+  position: relative;
+  bottom: -100px;
+  left: 0;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  color: var(--bg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5.15%, #000000 100%);
+}

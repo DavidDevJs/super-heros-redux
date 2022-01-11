@@ -6,14 +6,14 @@ const Card = ({ ...data }) => {
   const styledImage = {
     backgroundImage: `url(${data.image.url})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
   };
 
   return (
     <div className="card" style={styledImage}>
-      <h2>{data.name}</h2>
-      <ul>
+      <ul className="card__list">
+        <h2>{data.name}</h2>
         <li>intelligence: {data.powerstats.intelligence}</li>
         <li>Strength: {data.powerstats.strength} </li>
         <li>Speed: {data.powerstats.speed}</li>

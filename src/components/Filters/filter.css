@@ -1,0 +1,29 @@
+.filter__button {
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  margin-inline-start: 10px;
+}
+
+.filter__button:hover {
+  box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.filter__button--icon {
+  width: 30px;
+  height: 30px;
+}
+
+.filter__skills-container--disabled {
+  display: none;
+}
+
+.filter__skills-container {
+  position: fixed;
+  top: 118px;
+}
+
+.filter__adjectives {
+}
